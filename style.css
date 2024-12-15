@@ -1,0 +1,27 @@
+*{
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1,p{
+    text-align: center;
+    color: rgb(159, 127, 78);
+}
+
+body{
+    background-color: rgb(188, 208, 209);
+    color: rgb(54, 54, 91);
+}
+
+#container{
+    max-width: 70%;
+    margin: auto;
+}
+dt{
+    font-size: 22px;
+}
+dd{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    line-height: 1.5;
+}

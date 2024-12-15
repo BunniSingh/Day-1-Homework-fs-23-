@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      const domNode = document.getElementById('root');
+      const root = ReactDOM.createRoot(domNode);
+      let div = React.createElement('div', {id: 'container'}, 
+        React.createElement('h1', {}, 'Topics Covered'),
+        React.createElement('p', {}, 'The following is list of all topics we cover in MDN learning area.'),
+        React.createElement('dl', {}, 
+          React.createElement('dt', {}, 
+            React.createElement('a', {href: 'https://developer.mozilla.org/en-US/'}, 'Getting started with web')
+          ),
+          React.createElement('dd', {}, "Getting started with the web is a concise series introducing you to the practicalities of web development. You'll set up the tools you need to construct a simple webpage and publish your own simple code.'"),
+
+          React.createElement('dt', {}, 
+            React.createElement('a', {href: 'https://developer.mozilla.org/en-US/'}, 'HTML - Structuring the web')
+          ),
+          React.createElement('dd', {}, 'HTML is the language that we use to structure the diffrent part of our content and define their meaning and purpose is. This topic teaches HTML in details'),
+
+          React.createElement('dt', {}, 
+            React.createElement('a', {href: 'https://developer.mozilla.org/en-US/'}, 'CSS - Styleing the web')
+          ),
+          React.createElement('dd', {}, 'Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.'),
+          
+          React.createElement('dt', {}, 
+            React.createElement('a', {href: 'https://developer.mozilla.org/en-US/'}, 'CSS - Styleing the web')
+          ),
+          React.createElement('dd', {}, 'Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.')
+        )      
+      )
+      root.render(div);
+    </script>
+</body>
+</html>
